@@ -1,0 +1,107 @@
+.image-lummi-icon {
+  height: 364px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.image-container1 {
+  align-self: stretch;
+  border-radius: var(--br-29xl);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.card-description,
+.heading4 {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.card-description {
+  font-size: var(--font-size-base);
+  color: var(--color-darkseagreen-300);
+}
+.content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.icon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.button1 {
+  border-radius: var(--br-980xl);
+  background-color: var(--color-slateblue);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xs) var(--padding-5xl);
+}
+.content1,
+.portfolio-card {
+  display: flex;
+  max-width: 100%;
+}
+.content1 {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.portfolio-card {
+  flex: 1;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  flex-grow: 1;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-darkslategray-200);
+  font-family: var(--font-open-sans);
+}
+@media screen and (max-width: 1050px) {
+  .portfolio-card {
+    flex: 1;
+    max-width: 100%;
+    flex-grow: 1;
+  }
+}
+@media screen and (max-width: 800px) {
+  .content1 {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 750px) {
+  .portfolio-card {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .content-container {
+    flex: unset;
+    align-self: stretch;
+  }
+  .content1 {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--gap-5xs);
+    max-width: 100%;
+  }
+}
